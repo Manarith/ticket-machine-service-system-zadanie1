@@ -20,7 +20,7 @@ void CashRegister::remove(double value, int count) {
     coins[value] -= count;
 }
 
-std::map<double, int> CashRegister::getState() {
+std::map<double, int, std::greater<>> CashRegister::getState() {
     std::lock_guard<std::mutex> lock(mtx);
     return coins;
 }

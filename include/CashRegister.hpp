@@ -15,7 +15,7 @@ public:
     void add(double value, int count);
     void remove(double value, int count);
 
-    std::map<double, int> getState();
+    std::map<double, int, std::greater<>> getState();
 
     bool canProvide(double amount);
     std::map<double, int> withdrawChange(double amount);

@@ -1,4 +1,5 @@
 #include "TicketService.hpp"
+#include <optional>
 
 TicketService::TicketService() {
     tickets.push_back({ 1, 3.50 });

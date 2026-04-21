@@ -1,7 +1,6 @@
 #ifndef TICKETSERVICE_HPP
 #define TICKETSERVICE_HPP
 
-
 #include "common/Models.hpp"
 #include <vector>
 #include <mutex>
